@@ -27,7 +27,7 @@ jobs:
 
     - name: Get Commit Message
       run: |
-        commit_msg="${{ github.event.head_commit.message }}""
+        commit_msg="${{ github.event.head_commit.message }}"
         
         python src/intertext_files_merger/main.py "$commit_msg"
 
